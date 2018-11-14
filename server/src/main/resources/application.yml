@@ -1,0 +1,20 @@
+  spring:
+    application:
+        name: api
+
+    profiles:
+        active: dev
+
+  server:
+      port: 8080
+
+
+
+
+
+
+
+
+
+
+
