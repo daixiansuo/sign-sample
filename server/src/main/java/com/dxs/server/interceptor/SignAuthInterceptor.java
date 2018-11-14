@@ -42,6 +42,8 @@ public class SignAuthInterceptor extends HandlerInterceptorAdapter {
         SortedMap<Object,Object> sort = new TreeMap<>(params);
         String checkSign = SignAuthUtil.createSign(APIConstant.SIGN_KEY, sort);
 
+        System.out.println(checkSign);
+
         // 校验 签名
         if (sign.equals(checkSign)){
             return true;
