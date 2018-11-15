@@ -55,8 +55,8 @@ public class AuthorizationInterceptor extends HandlerInterceptorAdapter {
         }
 
         // 从Redis读取token
-        String userId = (String) map.get("pkId");
-        if (!tokenRedisDao.checkToken(userId, authorization)){
+        String username = (String) map.get("username");
+        if (!tokenRedisDao.checkToken(username, authorization)){
             throw new TokenExpireException();
         }
 
