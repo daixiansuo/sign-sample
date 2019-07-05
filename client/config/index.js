@@ -13,7 +13,7 @@ module.exports = {
     proxyTable: {
       '/api': {
         // 目标服务器地址
-        target: 'http://localhost:8080',
+        target: 'http://localhost:8088',
         // 路径重写
         pathRewrite: {'^/api' : ''},
         changeOrigin: true
