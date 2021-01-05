@@ -12,7 +12,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "iview": "^3.1.5",
     "js-md5": "^0.7.3",
     "jsencrypt": "^3.0.0-rc.1",
